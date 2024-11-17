@@ -1,0 +1,8 @@
+.itemsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #fc6;
+    min-height: 80vh;
+}
