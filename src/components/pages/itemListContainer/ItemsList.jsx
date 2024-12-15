@@ -1,7 +1,8 @@
 import React from 'react'
-import { products } from '../../../products'
+//import { products } from '../../../products'
 import ProductCard from '../../commons/cardProduct/ProductCard'
 import './itemList.css'
+
 
 const ItemsList = ({items}) => {
     return (

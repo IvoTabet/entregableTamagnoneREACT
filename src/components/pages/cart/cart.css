@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     font-family: Verdana;
     background-color: #fc6; 
     color: #222;
@@ -16,4 +17,29 @@
     margin: 10px;
     text-decoration: none;
     color: #222;
+    border: none;
+    background-color: #fc6;
+    cursor:pointer;
+}
+.cartCardItem{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.btnEliminicarCart{
+    border: none;
+    border-radius: 5px;
+    background-color: #ffaa44;
+    color: #222;
+    padding: 5px;
+    font-weight: 600;
+}
+.goToCheckout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

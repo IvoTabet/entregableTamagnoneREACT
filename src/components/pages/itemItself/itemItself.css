@@ -42,13 +42,22 @@
     grid-column: 3/4;
     grid-row: 2/3;
 }
+.addCartBTNCont{
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-items: center;
+    background-color: #ffaa44;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
 .addCartBTN{
     font-size: 20px;
     margin: 10px;
     text-decoration: none;
     color: #222;
-    grid-column: 3/4;
-    grid-row: 3/4;
     justify-self: center;
     background-color: #ffaa44;
     padding: 10px;

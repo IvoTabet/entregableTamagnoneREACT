@@ -5,19 +5,25 @@ import ItemListContainer from './components/pages/itemListContainer/ItemListCont
 import Footer from './components/layouts/Footer'
 import Cart from './components/pages/cart/Cart'
 import ItemItself from './components/pages/itemItself/ItemItself'
+import { CartContextProvider } from './contexts/CartContext'
+import Checkout from './components/pages/checkout/Checkout'
+
 
 function App() {
   
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<ItemListContainer />}/>
-        <Route path='/category/:name' element={<ItemListContainer />}/>
-        <Route path='/cart' element={<Cart />}/>
-        <Route path='/item/:id' element={<ItemItself />}/>
-      </Routes>
-      <Footer />
+      <CartContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer />}/>
+          <Route path='/category/:name' element={<ItemListContainer />}/>
+          <Route path='/cart' element={<Cart />}/>
+          <Route path='/item/:id' element={<ItemItself />}/>
+          <Route path='/checkout' element={<Checkout/>} />
+        </Routes>
+        <Footer />
+      </CartContextProvider>
     </BrowserRouter>
   )
 }
